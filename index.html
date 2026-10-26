@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1" />
+  <meta name="theme-color" content="#1f6b3b" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Romaneio" />
+  <title>Editor de Romaneio</title>
+  <link rel="manifest" href="./manifest.webmanifest" />
+  <link rel="icon" href="./icons/icon-192.png" />
+  <link rel="apple-touch-icon" href="./icons/icon-180.png" />
+  <link rel="stylesheet" href="./styles.css" />
+  <script type="importmap">
+    { "imports": { "mupdf": "./vendor/mupdf/mupdf.js" } }
+  </script>
+</head>
+<body>
+  <div id="app">
+    <div class="carregando">
+      <div class="spinner"></div>
+      <p>Carregando o motor de PDF…</p>
+      <small>Na primeira vez baixa ~10&nbsp;MB. Depois funciona sem internet.</small>
+    </div>
+  </div>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
